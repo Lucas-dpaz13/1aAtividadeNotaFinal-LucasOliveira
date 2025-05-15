@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas Oliveira da Paz">
+    <meta name="description" content="Esse é um site para apresentação daquele que vos escreve rsrs..">
+    <title>sobre mim</title>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f0f0; margin: 0;">
+    <main style="width: 80%; background-color: #ffffff; border-radius: 20px; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); overflow: hidden; padding: 20px; box-sizing: border-box; margin-top: 15%;">
+        <header style="text-align: center; padding: 20px;">
+            <div><img src="img.jpg" alt="minha foto" style="width: 150px; height: 150px; background-color: #ddd; border-radius: 50%; margin: 0 auto;"> </div>
+            <div style="margin-top: 15px;">
+                <p style="margin: 5px; font-size: 18px; font-weight: bold;" >Lucas Oliveira</p>
+                <p style="margin: 5px; font-size: 14px; color: #666;">Software engineer</p>
+            </div>
+        </header>
+        <article style="margin-bottom: 20px;">
+            <h2 style="font-size: 20px; margin-bottom: 5px;">Quem eu sou?</h2>
+            <p style="font-size: 14px; line-height: 1.6; color: #333;">olá, tudo bom? um breve resumo sobre mim seria: "Um cara tranquilo, com algumas complexidades, que não precisa de muito para ser feliz e se tornar seu amigo..." algumas definições: cristão, músico (por hobby), Palmeirense e um leitor em formação</p>
+            <br>
+            <h2 style="font-size: 20px; margin-bottom: 5px;">O que estou trabalhando no momento?</h2>
+            <p style="font-size: 14px; line-height: 1.6; color: #333;">No momento estou em uma graduação em Ciência da computação pela Estácio, estou com alguns projetos em andamentos e trabalhando para uma vaga no mercado trabalho.</p>
+            <br>
+        </article>
+        <section>
+            <h2 style="font-size: 20px; margin-bottom: 5px;">Algumas informações extras</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                <div  style="flex: 1 1 calc(auto - 10px); padding: 10px; border-radius: 10px; box-sizing: border-box;">
+                    <h3 style="font-size: 16px; margin-bottom: 0%;">matrícula Estácio</h3>
+                    <p style="font-size: 14px; color: #333;">2024 0827 0844</p>
+                </div>
+                <div  style="flex: 1 1 calc(auto - 10px); padding: 10px; border-radius: 10px; box-sizing: border-box;">
+                    <h3 style="font-size: 16px; margin-bottom: 0%;">localização</h3>
+                    <p style="font-size: 14px; color: #333;">Salvador-BA</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
