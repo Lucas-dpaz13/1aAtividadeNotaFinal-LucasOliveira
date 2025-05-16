@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Meu setup</title>
+        <meta name="author" content="Lucas Oliveira da Paz">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Esse é uma tabela que mostra os itens do meu setup">
+        <meta name="charset" content="UTF-8">
+    </head>
+
+    <body style="margin: 4px; padding: 0; font-family:sans-serif, ; background-color: #f4f4f4; ">
+        <h1>Itens do meu SETUP</h1>
+      
+        <div>
+            <h2>Tabela com valores:</h2>
+            <table  border="1" cellspacing="0"  style="width: 100% border-collapse">
+                <tr style="background-color: aqua; ">
+                    <th style="padding: 7px; width: 100px;">NOME</th>
+                    <th style="width: 100px;">PREÇO</th>
+                    <th style="width: 100px;">CATEGORIA</th>
+                    <th style="width: 400px;">DESCRIÇÃO</th>
+                </tr>
+                <tr>
+                    <th style="padding: 5px; text-align: left;">Notebook</th>
+                    <th>R$3600</th>
+                    <th>Equipamento</th>
+                    <th>Um notebook da Acer aspire 5</th>
+                </tr>
+                <tr style="background-color: rgb(233, 219, 219);"> 
+                    <th style="padding: 5px;">Teclado</th>
+                    <th>R$22</th>
+                    <th>Equipamento</th>
+                    <th>Um teclado padrão s/ fio</th>
+                </tr>
+                <tr>
+                    <th style="padding: 5px;">Mouse</th>
+                    <th>R$26</th>
+                    <th>Equipamento</th>
+                    <th>Um mouse padrão s/ fio</th>
+                </tr>
+                <tr style="background-color: rgb(233, 219, 219);">
+                    <th style="padding: 5px;">Mesa</th>
+                    <th>R$290</th>
+                    <th>Móvel</th>
+                    <th>Uma mesa de madeira com as hastes de ferro</th>
+                </tr>
+                <tr>
+                    <th style="padding: 5px;">Cadeira</th>
+                    <th>R$400</th>
+                    <th>Móvel</th>
+                    <th>Uma cadeira de escritório giratória</th>
+                </tr>
+            </table>
+        </div>
+        
+            
+
+    </body>
+
+
+</html>
