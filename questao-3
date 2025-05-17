@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Deixe sua mensagem</title>
+        <meta name="author" content="Lucas Oliveira da Paz">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Essa é uma pagina de contato">
+        <meta name="charset" content="UTF-8">
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                background-color: #fafafa;
+            }
+        
+            header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+            }
+        
+            header h1 {
+                margin-bottom: 10px;
+                font-size: 24px;
+            }
+        
+            header p {
+                margin-bottom: 20px;
+                font-size: 16px;
+                color: #555;
+            }
+        
+            .container {
+                width: 400px;
+                margin:0 auto;
+                background-color: #f5e1c8;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            }
+        
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+        
+            form input,
+            form textarea {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            form textarea {
+                resize: vertical;
+                max-width: 100%;
+            }
+
+            .feedback {
+                margin-top: 10px;
+                font-weight: bold;             
+                text-align: center;
+            }
+
+            button {
+                background-color: #696969;
+                color: #fff;
+                border: none;
+                padding: 10px 60px;
+                cursor: pointer;
+                font-size: 16px;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Deixe seu contato</h1>
+            <p>Olá! Preencha os campos e deixe sua mensagem.</p>
+        </header>
+        <div class="container">
+            <form action="">
+                <input type="text" name="nome" id="nomeInput" placeholder="Nome completo" value="">
+                <input type="email" name="email" id="emailInput" placeholder="Email" value="">
+                <textarea rows="5", cols="30" placeholder="Deixe sua mensagem.." id="mensagemInput"></textarea>
+                <button type="button" onclick="verificacao()" id="enviarInput">Enviar</button>
+            </form>
+
+            <div id="feedback" class="feedback"></div>
+
+            <script>
+                function verificacao() {
+                    let email = document.getElementById("emailInput")
+                    let nome = document.getElementById("nomeInput")
+                    let mensagem = document.getElementById("mensagemInput")
+                    let mensagemValue = mensagem.value
+                    let feedback = document.getElementById("feedback")
+
+                    if (email.value.trim() === ""  || nome.value.trim() === "" || mensagemValue.trim() === "") {
+                        feedback.textContent = "Todos os campos precisam está preenchidos!"
+                    }else if (!email.validity.valid) {
+                        feedback.textContent = "Email inválido"
+                    } else {
+                        feedback.textContent = "Mensagem enviada!"
+                        feedback.style.color = "green";
+                    }
+                }
+            </script>
+        </div>
+    </body>
+
+</html>
